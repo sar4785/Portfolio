@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+        .hero img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 50px;
+        }
+        .hero-content {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Bello!-Hello!</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <!-- รูปโปรไฟล์ -->
+        <img src="image/mypic.jpg" alt="Mypic">
+        
+        <div class="hero-content">
+            <h2>Hello, I'm <span>Sataporn</span></h2>
+            <p>Looking for job opportunities with an AI component.</p>
+            <div class="hero-buttons">
+                <a href="https://github.com/sar4785" class="btn-primary" target="_blank">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="image/apple.jpg" alt="Rotten Fruits Classification System">
+                <h3>Rotten Fruits Classification System</h3>
+                <p>Build a model that can analyze whether the four types of fruits in an image are rotten or normal.</p>
+                <a href="https://github.com/sar4785/RottenFruit_Classification" class="btn-project" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="image/TictacToe.jpg" alt="TicTacToe Game">
+                <h3>TicTacToe</h3>
+                <p>Battle with an Artificial Intelligence that can find a winning strategy and block your moves.</p>
+                <a href="https://github.com/sar4785/TicTacToe" class="btn-project" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="image/vehicle.jpg" alt="Detected Vehicles">
+                <h3>Detected Vehicles</h3>
+                <p>Use simulated data to track vehicles and display results in bar charts.</p>
+                <a href="https://github.com/sar4785/DetectedVehicle" class="btn-project" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">TensorFlow</div>
+            <div class="skill-card">Keras</div>
+            <div class="skill-card">Scikit-learn</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">C/C++</div>
+            <div class="skill-card">Arduino</div>
+            <div class="skill-card">SQL</div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <p>Sataporn Phimprasert, a third-year Artificial Intelligence student at Huachiew University. I am looking for job opportunities where I can work with AI.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact</h2>
+        <div class="social-icons">
+            <a href="https://github.com/sar4785" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:backup.email@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; Sataporn Phimprasert. </p>
+    </footer>
+
+</body>
+</html>
