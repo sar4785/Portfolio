@@ -191,30 +191,73 @@ body {
     color: #999;
     margin-top: 40px;
 }
-.skills-section {
-    padding: 60px 20px;
-    text-align: center;
-}
 
-.skills-container {
+.skills-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 0;
+  }
+  
+  .programming-skills,
+  .soft-skills {
+    flex: 1;
+    text-align: center;
+    margin-top: 65px;
+  }
+  
+  .programming-skills h3,
+  .soft-skills h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #000000; /* สีเหลืองสด */
+  }
+  
+  .programming-skills ul,
+  .soft-skills ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.skill-card {
-    background-color: #ffeaa7;
-    padding: 10px 20px;
+    gap: 12px;
+  }
+  
+  .programming-skills li,
+  .soft-skills li {
+    background-color: #f1c40f; /* เหลืองพาสเทลอ่อน */
+    border: 1px solid #ffe082; /* ขอบเหลืองอ่อน */
     border-radius: 25px;
-    font-weight: bold;
-    color: #333;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: background 0.3s, color 0.3s;
-}
-
-.skill-card:hover {
-    background-color: #f1c40f;
-    color: white;
-}
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .programming-skills li:hover,
+  .soft-skills li:hover {
+    transform: scale(1.05);
+    background-color: #f39c12;
+  }
+  
+  
+  /* Contact Section */
+  #contact {
+    margin-top: 40px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  .contact-text {
+    font-size: 1em;
+  }
+  
