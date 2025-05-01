@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Bello!-Hello!</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="image/mypic.jpg" alt="Mypic">
+
+        <div class="hero-content">
+          <h2>Hello, I'm <span>Sataporn</span></h2>
+          <p class="intro-text">I’m excited to bring my AI skills into real-world projects and keep pushing myself to learn and grow.</p>
+      
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <span class="contact-text">0928368363</span>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉️</span>
+              <span class="contact-text">satapornphimprasert@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+            
+            
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <section id="projects" class="projects-section fade-in-section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="image/apple.jpg" alt="Rotten Fruits Classification System">
+                <h3>Rotten Fruits Classification System</h3>
+                <p>Build a model that can analyze whether the four types of fruits in an image are rotten or normal.(4-12-2024 to 5-12-2024)</p>
+                <a href="https://github.com/sar4785/RottenFruit_Classification" class="btn-project" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="image/TictacToe.jpg" alt="TicTacToe Game">
+                <h3>TicTacToe</h3>
+                <p>Battle with an Artificial Intelligence that can find a winning strategy and block your moves.(20-8-2023 to 29-10-2023)</p>
+                <a href="https://github.com/sar4785/TicTacToe" class="btn-project" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="image/vehicle.jpg" alt="Detected Vehicles">
+                <h3>Detected Vehicles</h3>
+                <p>Use simulated data to track vehicles and display results in bar charts.(11-12-2024 to 30-1-2025)</p>
+                <a href="https://github.com/sar4785/DetectedVehicle" class="btn-project" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skills-container">
+          <div class="programming-skills">
+            <h3>Programming Skills</h3>
+            <ul>
+              <li>Python</li>
+              <li>C/C++</li>
+              <li>C#</li>
+              <li>HTML</li>
+              <li>Java</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="soft-skills">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Problem Solving</li>        
+              <li>Self-Learning</li>
+              <li>Team Collaboration</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    <section id="about" class="about-section fade-in-section">
+        <h2 class="section-title">About Me</h2>
+        <p>Sataporn Phimprasert, a third-year Artificial Intelligence student at Huachiew University. I am looking for job opportunities where I can work with AI.</p>
+    </section>
+
+   <section id="activity-card" class="activity-section">
+  <h2 class="activity-title">Activity & Certification</h2>
+  <div class="activity-gallery">
+    <div class="activity-item">
+      <img src="image/act1.jpg" alt="Laudkrabang">
+      <p class="activity-caption">Visited KMITL (16-11-2024)</p>
+    </div>
+    <div class="activity-item">
+      <img src="image/act2.jpg" alt="Reward">
+      <p class="activity-caption">AI Competition Award (07-07-2023)</p>
+    </div>
+    <div class="activity-item">
+      <img src="image/mypic2.jpg" alt="Inventor-Days">
+      <p class="activity-caption">Thailand inventor's Day (05-02-2024)</p>
+    </div>
+    <div class="activity-item">
+      <img src="image/genz.png" alt="GenZtoCEO">
+      <p class="activity-caption">Gen Z to CEO Program (14-03-2023)</p>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+        <p>&copy; Sataporn Phimprasert. </p>
+    </footer>
+    <script>
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+    
+      document.querySelectorAll('.fade-in-section').forEach(section => {
+        observer.observe(section);
+      });
+    </script>
+    
+</body>
+</html>
